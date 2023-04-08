@@ -10,6 +10,7 @@ var databaseOperation = require('./databaseOperation');
 app.get("/alo", (req, res) => {
     databaseOperation.getOrders().then(result =>{
         res.json(result);
+        console.log("a");
     })
   });
 
